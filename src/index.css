@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* LegalEase - Calm, Trustworthy, Youth-Friendly */
+    --background: 210 40% 98%;
+    --foreground: 220 50% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 50% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 50% 15%;
+
+    /* Navy Blue - Trust & Credibility */
+    --primary: 215 60% 25%;
+    --primary-foreground: 210 40% 98%;
+
+    /* Soft Teal - Calm & Supportive */
+    --secondary: 195 45% 92%;
+    --secondary-foreground: 215 60% 25%;
+
+    /* Muted Grays */
+    --muted: 210 30% 95%;
+    --muted-foreground: 215 20% 45%;
+
+    /* Accent - Soft Teal */
+    --accent: 190 50% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 30% 90%;
+    --input: 210 30% 90%;
+    --ring: 215 60% 25%;
+
+    --radius: 0.75rem;
+
+    /* Custom tokens for LegalEase */
+    --navy: 215 60% 25%;
+    --navy-light: 215 50% 35%;
+    --navy-dark: 215 65% 18%;
+    --teal: 190 50% 45%;
+    --teal-light: 190 45% 55%;
+    --teal-soft: 190 40% 95%;
+    --warm-white: 40 30% 98%;
+    --soft-gray: 210 20% 96%;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(215 60% 25%) 0%, hsl(215 50% 35%) 50%, hsl(190 50% 45%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(210 30% 98%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(190 50% 45%) 0%, hsl(190 45% 55%) 100%);
+    
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 hsl(215 60% 25% / 0.05);
+    --shadow-md: 0 4px 6px -1px hsl(215 60% 25% / 0.08), 0 2px 4px -2px hsl(215 60% 25% / 0.05);
+    --shadow-lg: 0 10px 15px -3px hsl(215 60% 25% / 0.1), 0 4px 6px -4px hsl(215 60% 25% / 0.05);
+    --shadow-xl: 0 20px 25px -5px hsl(215 60% 25% / 0.1), 0 8px 10px -6px hsl(215 60% 25% / 0.05);
+    --shadow-glow: 0 0 40px hsl(190 50% 45% / 0.15);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 220 50% 8%;
+    --foreground: 210 40% 98%;
+
+    --card: 220 50% 12%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 220 50% 12%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 190 50% 50%;
+    --primary-foreground: 220 50% 8%;
+
+    --secondary: 215 40% 18%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 215 40% 18%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 190 50% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 215 40% 20%;
+    --input: 215 40% 20%;
+    --ring: 190 50% 50%;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-hero);
+  }
+
+  .card-shadow {
+    box-shadow: var(--shadow-md);
+  }
+
+  .card-shadow-lg {
+    box-shadow: var(--shadow-lg);
+  }
+
+  .glow-shadow {
+    box-shadow: var(--shadow-glow);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--muted));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--muted-foreground) / 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--muted-foreground) / 0.5);
+}
