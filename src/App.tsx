@@ -12,6 +12,7 @@ import TopicDetail from "./pages/TopicDetail";
 import Templates from "./pages/Templates";
 import HowItWorks from "./pages/HowItWorks";
 import About from "./pages/About";
+import LegalBridge from "./pages/LegalBridge";
 import Auth from "./pages/Auth";
 import NotFound from "./pages/NotFound";
 
@@ -32,6 +33,7 @@ const App = () => (
               <Route path="/topics/:topicId" element={<TopicDetail />} />
               <Route path="/templates" element={<Templates />} />
               <Route path="/how-it-works" element={<HowItWorks />} />
+              <Route path="/legal-bridge" element={<LegalBridge />} />
               <Route path="/about" element={<About />} />
               <Route path="/auth" element={<Auth />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

@@ -39,6 +39,11 @@ export const translations: Translations = {
     hi: "यह कैसे काम करता है",
     mr: "हे कसे कार्य करते",
   },
+  "nav.legalBridge": {
+    en: "Legal Bridge",
+    hi: "लीगल ब्रिज",
+    mr: "लीगल ब्रिज",
+  },
   "nav.about": {
     en: "About",
     hi: "हमारे बारे में",
@@ -1090,6 +1095,31 @@ export const translations: Translations = {
     en: "Save your chat history • Sync language preferences • Get personalized guidance",
     hi: "अपनी चैट इतिहास सहेजें • भाषा प्राथमिकताएं सिंक करें • व्यक्तिगत मार्गदर्शन प्राप्त करें",
     mr: "तुमचा चॅट इतिहास जतन करा • भाषा प्राधान्ये सिंक करा • वैयक्तिक मार्गदर्शन मिळवा",
+  },
+  "legalBridge.title": {
+    en: "Legal Bridge – Lawyer Connect",
+    hi: "लीगल ब्रिज – वकील कनेक्ट",
+    mr: "लीगल ब्रिज – वकील कनेक्ट",
+  },
+  "legalBridge.subtitle": {
+    en: "Post a legal question and connect with volunteer or paid lawyers who can guide you. A simple bridge between young people and trusted legal help.",
+    hi: "एक कानूनी प्रश्न पोस्ट करें और स्वैच्छिक या भुगतान किए गए वकीलों से जुड़ें जो मार्गदर्शन कर सकते हैं। युवाओं और विश्वसनीय कानूनी सहायता के बीच एक सरल पुल।",
+    mr: "कायदेशीर प्रश्न पोस्ट करा आणि स्वयंसेवी किंवा शुल्क घेणाऱ्या वकिलांशी जोडा ज्यांनी मार्गदर्शन केले पाहिजे. तरुण आणि विश्वसनीय कायदेशीर मदतीदरम्यान एक सोपा ब्रिज.",
+  },
+  "legalBridge.button": {
+    en: "Go to Legal Bridge Platform",
+    hi: "लीगल ब्रिज प्लेटफ़ॉर्म पर जाएं",
+    mr: "लीगल ब्रिज प्लॅटफॉर्मवर जा",
+  },
+  "legalBridge.learnMore": {
+    en: "Learn how Legal Bridge works",
+    hi: "जानें कि लीगल ब्रिज कैसे काम करता है",
+    mr: "लीगल ब्रिज कसे कार्य करते ते जाणून घ्या",
+  },
+  "legalBridge.trustedBadge": {
+    en: "Trusted & Secure",
+    hi: "विश्वसनीय और सुरक्षित",
+    mr: "विश्वसनीय आणि सुरक्षित",
   },
 };
 
